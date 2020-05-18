@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+		<meta property="og:image" content="" />
+		<meta property="og:image:secure_url" content="" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.min.css">
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#000">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#000">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	</head>
+
+	<body>
+		<div class="top-line">
+			<div class="section-wrapp top-line-inner">
+				<div class="left-memu">
+					<i id="burger" class="fas fa-bars burger"></i>
+					<div id="menu" class="modal-nav hide">
+						<img src="images/close-modal.svg" alt="" id="close-menu" class="modal-nav__close">
+						<div class="login">
+							<p id="login" class="login__name">Littlewd20@gmail.com <img id="login__flag" src="images/flag.svg" alt="" class="login__flag"></p>
+							<div id="login__content" class="login__content">
+								<a href="" class="login__option">Изменить пароль</a>
+								<a href="" class="login__option">Выход</a>
+							</div>
+
+						</div>
+						<div class="modal-nav__content">
+							<a href="#" class="modal-nav__link">YouTube to MP3 Converter  </a>
+							<a href="#" class="modal-nav__link">Download video in youtube</a>
+							<a href="#" class="modal-nav__link">Soundcloud to mp3</a>
+							<a href="#" class="modal-nav__link modal-nav__link--page">Contact</a>
+							<a href="#" class="modal-nav__link modal-nav__link--page">FAQ</a>
+							<a href="#" class="modal-nav__link modal-nav__link--page">Privacy</a>
+							<a href="#" class="modal-nav__link">Instagram download</a>
+						</div>
+					</div>
+					<img src="images/logo.png" alt="" class="logo">
+					<img src="images/download.svg" alt="" class="download-mobile">
+				</div>
+				<form class="form form--header" action="">
+					<input class="form__input form__input--header" type="text" placeholder="Введите запрос или вставьте ссылку" >
+					<input class="form__btn form__btn--header" type="submit" value="">
+				</form>
+				<div class="right-memu">
+					<a href="" class="rates">Тарифы</a>
+					<a href="" class="download">
+						<img src="images/download.svg" alt="" class="download__img">
+						<span class="download__text">7</span>
+					</a>
+					<a href="" class="enter">Вход</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<h1 class="title">Скачать видео с Ютуб в 1 клик!</h1>
+			<form class="form form--main" action="">
+				<input class="form__input form__input--main" type="text" placeholder="Введите запрос или вставьте ссылку" >
+				<input class="form__btn form__btn--main" type="submit" value="">
+			</form>
+			<h3 class="sub-title">Найдите видео по названию либо вставьте ссылку на ролик, плейлист или ютуб канал</h3>
+		</div>
+
+		<div class="browser">
+			<div class="browser__wrapp">
+				<div class="browser-nav">
+					<img src="images/arrow-left.svg" alt="" class="browser-nav__left">
+					<img src="images/arrow-right.svg" alt="" class="browser-nav__right">
+					<img src="images/arrow-reload.svg" alt="" class="browser-nav__reload">
+				</div>
+				<div class="browser-address">
+					<img src="images/arrow.svg" alt="" class="arrow">
+					<p class="browser-address__text">https://www.youtube.com/watch?v=QWertYUioPa</p>
+					<img src="images/settings.svg" alt="" class="browser-address__settings">
+				</div>
+				<div class="browser-control">
+					<img src="images/minimize.svg" alt="" class="browser-control__minimize">
+					<img src="images/resize.svg" alt="" class="browser-control__resize">
+					<img src="images/close.svg" alt="" class="browser-control__close">
+				</div>
+			</div>
+		</div>
+
+		<div class="videos">
+			<div class="section-wrapp">
+				<div class="tabs">
+					<ul class="tabs__caption">
+						<li class="tabs__caption-item active-caption">Топ видео</li>
+						<li class="tabs__caption-item ">Топ клипы</li>
+					</ul>
+					<div class="tabs__content active">
+						<div class="slick">
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div class="slick">
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+							<div class="slick__item">
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+								<div class="card">
+									<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+										<img src="images/cover2.svg" alt="" class="card__img">
+									</a>
+									<div class="card__info">
+										<div class="card__descr">
+											<img src="images/ava.png" alt="" class="card__ava">
+											<div class="card__name">Zachary Heinzerling</div>
+											<div class="card__view">86,8K plays</div>
+										</div>
+										<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="videos-title">Топ видео</h3>
+				<div class="video-mobile">
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+				</div>
+				<h3 class="videos-title">Топ клипы</h3>
+				<div class="video-mobile">
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+										<span class="play">
+											<i class="fas fa-play play__btn"></i>
+											<span class="play__time">05:30</span>
+										</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+					<div class="card card--mobile">
+						<a href="#" class="card__img-wrapp">
+							<span class="play">
+								<i class="fas fa-play play__btn"></i>
+								<span class="play__time">05:30</span>
+							</span>
+							<img src="images/cover2.svg" alt="" class="card__img">
+						</a>
+						<div class="card__info">
+							<div class="card__descr">
+								<img src="images/ava.png" alt="" class="card__ava">
+								<div class="card__name">Zachary Heinzerling</div>
+								<div class="card__view">86,8K plays</div>
+							</div>
+							<a href="#" class="card__title">Ольгa Бузoва — "Лaйкeр" Прeмьера клипa 2019</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="preference">
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="alert" id="alert">
+			<p class="alert__text">Ваш пароль изменен</p>
+			<img src="images/close-modal.svg" alt="" id="close-alert" class="alert__close">
+		</div>
+
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

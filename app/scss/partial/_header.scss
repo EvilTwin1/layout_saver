@@ -1,0 +1,144 @@
+.header{
+  padding: 0 20px;
+}
+
+.title{
+  text-align: center;
+  font-weight: 500;
+  @include adaptiv-font(42, 28);
+  line-height: 50px;
+  color: #1A2E3B;
+}
+
+.sub-title{
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160%;
+  text-align: center;
+  color: #07ADEE;
+}
+
+
+/*----------------------- Form ------------------------------ */
+.form{
+  &--header{
+    display: none;
+    max-width: 665px;
+    width: 100%;
+    margin: 0 30px;
+  }
+  &--main{
+    max-width: 1010px;
+    margin: auto;
+    margin-bottom: 65px;
+  }
+  background: #FFFFFF;
+  border: 2px solid #07ADEE;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__input{
+    ::placeholder{
+      color: #CCCCCC;
+    }
+    &--header{
+      padding: 12px 18px;
+      margin-left: 1px;
+      @include adaptiv-font(15, 13);
+    }
+    &--main{
+      padding: 3% 3.5%;
+      line-height: 28px;
+      @include adaptiv-font(24, 15);
+    }
+    border: none;
+    color: #1A2E3B;
+    width: 100%;
+    outline: none;
+  }
+  &__btn{
+    &--header{
+      width: 40px;
+      height: 43px;
+      background-image: url("../images/search.svg");
+      background-size: 12px;
+    }
+    &--main{
+      width: 90px;
+      height: 91px;
+    }
+    border: none;
+    background-color: #07ADEE;
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+/*----------------------- End Form -------------------------- */
+
+
+/*----------------------- Browser --------------------------- */
+.browser{
+  border-top: 1px solid #E2E2E2;
+  padding-top: 10px;
+  padding-bottom: 60px;
+
+  &__wrapp{
+    max-width: 1600px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+.browser-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 83px;
+  width: 100%;
+  margin-right: 25px;
+}
+
+.browser-address{
+  max-width: 1215px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  &__text{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #6F7071;
+    margin: 0;
+  }
+}
+
+.browser-control{
+  margin-left: 25px;
+  max-width: 93px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*----------------------- End Browser ----------------------- */

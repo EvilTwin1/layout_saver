@@ -1,0 +1,213 @@
+/*----------------------- Tabs ------------------------------ */
+.tabs{
+  &__caption{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 412px;
+    height: 63px;
+    margin: auto;
+    margin-top: 0;
+    transition: .5s;
+    margin-bottom: 38px;
+  }
+  &__caption-item{
+    cursor: pointer;
+    padding: 12px 31px;
+    font-size: 29px;
+    line-height: 38px;
+    text-align: center;
+    color: #07ADEE;
+    position: relative;
+    &:before{
+      content: "";
+      width: 144px;
+      display: block;
+      position: absolute;
+      top: 50px;
+      border-bottom: 1px dashed #07ADEE;
+    }
+  }
+  &__content{
+    visibility: hidden;
+    height: 0px;
+    overflow: hidden;
+  }
+}
+
+.active-caption{
+  background: #FAFAFA;
+  border-radius: 4px;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  padding: 12px 31px;
+  color: #1A2E3B;
+  border-bottom: none;
+  &:before{
+    border-bottom: 0px dashed #07ADEE;
+  }
+}
+
+.tabs__content.active {
+  visibility: visible;
+  height: auto;
+}
+/*----------------------- End Tabs -------------------------- */
+
+
+/*----------------------- Card ------------------------------ */
+.card{
+  margin: auto;
+  max-width: 282px;
+  width: 100%;
+  transition: .5s;
+  &--mobile{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+  &:hover .card__title{
+     color: #07ADEE;
+  }
+  &__img-wrapp{
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    &:hover .play{
+      display: flex;
+    }
+  }
+  &__img{
+    width: 100%;
+  }
+  &__info{
+    position: relative;
+  }
+  &__descr{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 11px;
+    margin-top: -15px;
+  }
+  &__ava{
+    width: 40px;
+    height: 40px;
+  }
+  &__name{
+    font-size: 13px;
+    line-height: 15px;
+    color: #1A2E3B;
+  }
+  &__view{
+    font-size: 13px;
+    line-height: 15px;
+    color: #07ADEE;
+  }
+  &__title{
+    padding: 15px 14px 27px 14px;
+    display: block;
+    font-size: 16px;
+    line-height: 140%;
+    color: #1A2E3B;
+    text-decoration: none;
+    white-space: pre-wrap;
+  }
+}
+
+.play{
+  display: none;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 61px;
+  left: 90px;
+  z-index: 2;
+  &__btn{
+    font-size: 21px;
+    color: #07ADEE;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.8;
+    z-index: 1;
+  }
+  &__time{
+    padding: 2px 12px 2px 40px;
+    display: block;
+    background: #07ADEE;
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    line-height: 2;
+    z-index: -1;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+/*----------------------- End Card -------------------------- */
+
+
+
+
+.videos-title{
+  font-size: 32px;
+  line-height: 38px;
+  color: #1A2E3B;
+}
+.video-mobile{
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: nowrap;
+  overflow: hidden;
+  min-height: 300px;
+  height: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  //scroll-direction: horizontal;
+}
+
+.video-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/*----------------------- Custom Slick ---------------------- */
+.slick__item{
+  outline: none;
+}
+
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  content: ' ';
+  text-align: center;
+  opacity: .25;
+  background-color: #07ADEE;
+}
+
+.slick-dots li{
+  &:not(:last-child){
+    margin-right: 20px;
+  }
+}
+/*----------------------- End Custom Slick ------------------- */

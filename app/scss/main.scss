@@ -1,0 +1,68 @@
+@import "libs";
+@import "font";
+@import "vars";
+
+ @import "partial/_top-line";
+ @import "partial/_header";
+ @import "partial/_menu";
+ @import "partial/_videos";
+
+body{
+ padding-top: 210px;
+
+ font-family: Rubik;
+ font-style: normal;
+ font-weight: normal;
+}
+
+
+
+.section-wrapp{
+ max-width:1218px;
+ padding: 0 20px;
+ width: 100%;
+ margin: auto;
+}
+
+
+.alert{
+ padding: 22px 22px 22px 35px;
+ background: #1A2E3B;
+ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+ border-radius: 4px;
+ max-width: 300px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 10;
+ &__close{
+  width: 30px;
+  cursor: pointer;
+ }
+ &__text{
+  text-align: left;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  color: #FFFFFF;
+  padding-right: 30px;
+  margin: 0;
+ }
+}
+
+.show{
+ display: flex;
+}
+
+.hide{
+ display: none;
+}
+
+
+@import "media";

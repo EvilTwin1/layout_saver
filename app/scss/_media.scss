@@ -1,0 +1,140 @@
+@import "vars";
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+  .arrow{
+    position: absolute;
+    top: -133px;
+    left: -49px;
+    transform: rotate(-32deg);
+    width: 134px;
+    height: 168.92px;
+  }
+}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .arrow {
+    position: absolute;
+    top: -121px;
+    left: -97px;
+    width: 176px;
+    height: 143.92px;
+    transform: rotate(-43deg);
+  }
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1000px) {
+  .form__btn{
+    width: 80px;
+    height: 84px;
+  }
+  .top-line{
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
+  .browser{
+    display: none;
+  }
+  .sub-title{
+    display: none;
+  }
+  .tabs{
+    display: none;
+  }
+  .play{
+    display: flex;
+  }
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .right-memu{
+    display: none;
+  }
+  .download-mobile{
+    display: block;
+  }
+  .left-memu {
+    max-width: 100%;
+  }
+}
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .form__btn{
+    width: 60px;
+    height: 64px;
+  }
+  .top-line{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .logo{
+    width: 103px;
+    height: 27px;
+  }
+  .modal-nav{
+    left: 0;
+    top: 0;
+    max-width: 100%;
+  }
+  body{
+    padding-top: 150px;
+  }
+
+}
+/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1000px) {
+  .videos-title{
+    display: none;
+  }
+  .video-mobile{
+    display: none;
+  }
+}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1400px) {
+  .arrow{
+    position: absolute;
+    top: -147px;
+    left: -49px;
+    transform: rotate(-7deg);
+    width: 170px;
+    height: 168.92px;
+  }
+}
+/**/
